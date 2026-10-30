@@ -1,0 +1,8 @@
+RFM_Segment,Customers,AvgRecencyDays,AvgFrequency,AvgLifetimeSpend,TotalLifetimeSpend,Recommendation
+At Risk,4264,258.82,15.03,1243.26,5301259.23,"Previously frequent buyers who have gone quiet (60-180 days recency, still moderate frequency). Trigger a win-back campaign with a personalized discount before they lapse into 'Lost'."
+VIP,2532,43.38,8.52,640.1,1620727.01,"Highest recency, frequency, and spend. Protect this relationship with priority renewal windows, dedicated account management, and early access to playoff/cup tickets. Churn here is the most expensive to replace."
+Occasional,2674,111.42,2.48,172.48,461217.07,"Buy a handful of games a season, usually reactively. Target with single-game flash sales and themed promotion nights (rival week, family day) that map to the games they already attend."
+Lost,3086,437.07,1.26,87.36,269599.11,"No purchase in over a year. Low-cost reactivation only (email/SMS blast, broad promotions) — do not spend premium marketing budget here until they show renewed engagement."
+New,1405,52.8,1.51,105.94,148838.81,"First purchase within the last 90 days. Send a structured welcome series (venue guide, next-game reminder, first-purchase discount) to convert a trial visit into a second purchase — the highest-leverage moment in the lifecycle."
+Loyal,338,49.64,5.08,252.48,85337.56,"Frequent, fairly recent buyers who aren't yet top spenders. Upsell to season packages or premium seating and enroll them in a loyalty points program to nudge them toward VIP status."
+Never Purchased,3701,-1.0,0.0,0.0,0.0,"In the CRM (newsletter signup, account creation) but has never bought a ticket. Nurture with top-of-funnel content and first-ticket incentives rather than loyalty offers."

@@ -1,0 +1,83 @@
+# Sports Business Intelligence Platform — global configuration
+# Central place for constants shared across the ETL pipeline, analytics
+# modules, and the dashboard. Never hardcode these values elsewhere.
+
+club:
+  name: "Meridian City FC"
+  city: "Meridian City"
+  state: "OH"
+  stadium_name: "Union Field"
+  stadium_capacity: 4200
+  founded: 2015
+
+seasons:
+  - id: 1
+    label: "2023-24"
+    start_date: "2023-08-05"
+    end_date: "2024-05-25"
+  - id: 2
+    label: "2024-25"
+    start_date: "2024-08-03"
+    end_date: "2025-05-24"
+
+schedule:
+  home_games_per_season: 19
+  away_games_per_season: 19
+  cup_games_per_season: 4          # extra home cup/playoff fixtures
+  rival_opponents:
+    - "Northgate FC"
+    - "Harbor City FC"
+    - "Ironclad SC"
+  opponents:
+    - "Northgate FC"
+    - "Harbor City FC"
+    - "Ironclad SC"
+    - "Union Point AC"
+    - "Old Mill Athletic"
+    - "Redwood FC"
+    - "Granite City SC"
+    - "Bayside Rovers"
+    - "Highland Park FC"
+    - "Frontier FC"
+    - "Sundown SC"
+    - "Stormfront United"
+    - "Lakeshore FC"
+    - "Prairie Wind SC"
+
+data_generation:
+  random_seed: 42
+  n_customers: 18000
+  target_total_tickets: 100000
+  season_ticket_holder_pct: 0.12
+  n_campaigns: 14
+
+seat_sections:
+  - name: "Premium Club"
+    base_price: 150
+    pct_of_capacity: 0.06
+  - name: "Midfield Club"
+    base_price: 95
+    pct_of_capacity: 0.14
+  - name: "Lower Bowl"
+    base_price: 65
+    pct_of_capacity: 0.28
+  - name: "Family Section"
+    base_price: 50
+    pct_of_capacity: 0.12
+  - name: "Upper Deck"
+    base_price: 40
+    pct_of_capacity: 0.20
+  - name: "Supporters Section"
+    base_price: 35
+    pct_of_capacity: 0.12
+  - name: "Student Section"
+    base_price: 25
+    pct_of_capacity: 0.08
+
+paths:
+  raw_dir: "data/raw"
+  cleaned_dir: "data/cleaned"
+  processed_dir: "data/processed"
+  database: "database/ticket_sales.db"
+  logs_dir: "logs"
+  reports_dir: "reports"

@@ -1,0 +1,18 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+.ipynb_checkpoints/
+.pytest_cache/
+.DS_Store
+*.log
+logs/*.log
+.streamlit/secrets.toml
+.env
+
+# Large intermediate ETL artifacts are fully reproducible via
+# `python -m etl.run_pipeline` — keep the repo lean, keep database/ committed
+# so the dashboard runs immediately after a clone.
+data/raw/*.csv
+data/cleaned/*.csv
+data/processed/*.csv
